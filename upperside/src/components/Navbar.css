@@ -1,15 +1,46 @@
-.navbar{
-    padding: .4rem;
+.navbar {
+    padding: 40px;
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.nav-link{
-    color:black;
-    text-decoration: underline;
-    text-decoration-color: #947EC4;
+.navbar-left {
+    padding-left: 40px;
+}
+
+.nav-link {
+    margin-left: 30px;
+    text-decoration: none; /* Quita el subrayado predeterminado */
+    color: black; /* Color del texto del enlace */
+    position: relative; /* Permite posicionar el subrayado personalizado con respecto al enlace */
+    margin-bottom: 50px;
+  }
+  
+  .nav-link::after {
+    content: ''; /* Crea un elemento de pseudocontenido para el subrayado */
+    position: absolute; /* Posiciona el subrayado de forma absoluta */
+    top: 22px;
+    /* bottom: 0; Ajusta la posición vertical del subrayado */
+    left: 0; /* Alinea el subrayado con el inicio del enlace */
+    width: 50%; /* Ancho del subrayado (la mitad del ancho del texto) */
+    height: 3px; /* Altura del subrayado */
+    background-color: #947EC4; /* Color del subrayado */
+    transition: width 0.3s ease; /* Agrega una transición suave al ancho del subrayado */
+  }
+  
+  .nav-link:hover::after {
+    width: 100%; /* Ajusta el ancho del subrayado al 100% en el estado de hover */
+  }
+
+.navbar-right {
+    padding-right: 40px;
     justify-content: space-between;
-    margin-right: 1rem;
+}
+
+.icon-navbar {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
 }
