@@ -1,10 +1,8 @@
 import React from "react";
 import logo from "../assets/LogoUpperside.png";
-import "./Navbar.css"; // Estilos CSS para la barra de navegación
-import UserProfile from '../assets/IconoPerfil.svg';
-import ShoppingBag from '../assets/IconoBolsa.svg';
-import IconSearch from '../assets/IconoLupa.svg';
-import FavoriteIcon from '../assets/IconoCorazón.svg';
+import "../styles/Navbar.css"; // Estilos CSS para la barra de navegación
+import BurguerButton from "./BurguerButton..jsx";
+
 
 const Navbar = () => {
     return (
@@ -12,27 +10,22 @@ const Navbar = () => {
             <div className="navbar-left">
                 <img src={logo} alt="Logo" className="logo" />
             </div>
-            <div className="navbar-center"> 
-                <a href="#" className="nav-link">  
-                    Inicio
+            <div className="navbar-center">
+                <a href="#" className="nav-link">
+                    Colecciones
                 </a>
                 <a href="#" className="nav-link">
-                    Perfil
+                    Lencería
                 </a>
                 <a href="#" className="nav-link">
-                    Mensajes
+                    Inferiores
                 </a>
                 <a href="#" className="nav-link">
-                    Configuración
+                    Complementos
                 </a>
             </div>
             <div className="navbar-right">
-            <img src={IconSearch} alt="Icono de Busqueda" className="icon-navbar"  />
-            <img src={FavoriteIcon} alt="Icono de Corazon" className="icon-navbar"  />
-            <img src={UserProfile} alt="Icono de Perfil" className="icon-navbar"  />
-            <img src={ShoppingBag} alt="Icono de Carrito Compras" className="icon-navbar"  />
-            
-
+                    <BurguerButton />
             </div>
         </nav>
     );

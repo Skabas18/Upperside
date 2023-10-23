@@ -37,6 +37,14 @@
 .navbar-right {
     padding-right: 40px;
     justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-center{
+  @media (max-width:768px){
+    display: none;
+  }
 }
 
 .icon-navbar {
