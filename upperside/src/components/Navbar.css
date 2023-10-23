@@ -1,0 +1,15 @@
+.navbar{
+    padding: .4rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-link{
+    color:black;
+    text-decoration: underline;
+    text-decoration-color: #947EC4;
+    justify-content: space-between;
+    margin-right: 1rem;
+}
