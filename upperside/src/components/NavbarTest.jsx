@@ -7,11 +7,9 @@ import IconSearch from '../assets/IconoLupa.svg';
 import FavoriteIcon from '../assets/IconoCorazón.svg';
 import MenuIcon from '../assets/Rayas-icono.svg';
 import { ImCross } from "react-icons/im";
-import "../styles/Navbar.css"; // Estilos CSS para la barra de navegación
-
-const Navbar = () => {
+import "../styles/NavbarTest.css"; // Estilos CSS para la barra de navegación
+function NavbarTest() {
     const [Mobile, setMobile] = useState(false);
-
     return (
         <nav className="navbar">
             <div className="Navbar-left">
@@ -41,7 +39,7 @@ const Navbar = () => {
                 </div>
             </div>
         </nav>
-    );
-};
+    )
+}
 
-export default Navbar;
+export default NavbarTest
