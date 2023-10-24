@@ -72,12 +72,12 @@
     margin-right: 10px;
 }
 
-@media (min-width:768px) {
+@media (min-width:769px) {
     .BurguerMenu {
         display: none;
     }
 }
-@media (max-width:768px)  {
+@media (max-width:769px)  {
     .IconsMenu {
         margin-right: 40px;
         margin-left: -50px;
