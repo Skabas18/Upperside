@@ -1,14 +1,15 @@
+
 export const data = [
   {
-    id: 1, imgUrl: "../assets/Modales/BannerPrincipal.png"
+    src: "https://picsum.photos/seed/img1/600/400",
+    alt: "Image 1 for carousel"
   },
   {
-    id: 2, imgUrl: "src/assets/Modales/BannerPrincipal.png"
+    src: "https://picsum.photos/seed/img2/600/400",
+    alt: "Image 2 for carousel"
   },
   {
-    id: 3, imgUrl: "src/assets/Modales/BannerPrincipal.png"
-  },
-  {
-    id: 4, imgUrl: "src/assets/Modales/BannerPrincipal.png"
+    src: "https://picsum.photos/seed/img3/600/400",
+    alt: "Image 3 for carousel"
   }
 ];

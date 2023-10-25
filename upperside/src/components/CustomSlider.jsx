@@ -1,75 +1,41 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { data } from '../components/Data';
-import '../styles/CustomSlider.css';
-import fondo from '../assets/Modales/BannerPrincipal.png';
+import React, { useState } from 'react'
+import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs"
+import '../styles/CustomSlider.css'
 
 
-function CustomSlider() {
-    const listRef = useRef();
-    const [currentIndex, setCurrentIndex] = useState(0);
 
-    useEffect(() => {
-        const listNode = listRef.current;
-        const imgNode = listNode.querySelectorAll("li > img")[currentIndex];
 
-        if (imgNode) {
-            imgNode.scrollIntoView({
-                behavior: "smooth"
-            });
-        }
-    }, [currentIndex])
 
-    const scrollToImage = (direction) => {
-        if (direction === 'prev') {
-            setCurrentIndex(curr => {
-                const isFirstSlide = currentIndex === 0;
-                return isFirstSlide ? 0 : curr - 1;
-            })
-        } else {
-            const isLastSlide = currentIndex === data.length - 1;
-            if (!isLastSlide) {
-                setCurrentIndex(curr => curr + 1);
-            }
-        }
-    }
+function CustomSlider( {data} ) {
 
-    const goToSlide = (slideIndex) => {
-        setCurrentIndex(slideIndex);
-    }
+    const [slide, setSlide] = useState(0);
+
+    const nextSlide = () => {
+        setSlide(slide === data.length - 1 ? 0 : slide + 1);
+    };
+
+    const prevSlide = () => {
+        setSlide(slide === 0 ? data.length - 1 : slide - 1);
+    };
 
     return (
-        <div>
-            <div className="main-container">
-                <div className="slider-container">
-                    <div className='leftArrow' onClick={() => scrollToImage('prev')}>&#10092;</div>
-                    <div className='rightArrow' onClick={() => scrollToImage('next')}>&#10093;</div>
-                    <div className="container-images">
-                        <ul ref={listRef}>
-                            {
-                                data.map((item) => {
-                                    return <li key={item.id}>
-                                        <img src={item.imgUrl} width={500} height={280} alt="" />
-                                    </li>
-                                })
-                            }
-                        </ul>
-                    </div>
-                    <div className="dots-container">
-                        {
-                            data.map((_, idx) => (
-                                <div key={idx}
-                                    className={`dot-container-item ${idx === currentIndex ? "active" : ""}`}
-                                    onClick={() => goToSlide(idx)}>
-                                    &#9865;
-                                </div>))
-                        }
-                    </div>
-                </div>
-            </div >
-            <img src={fondo} width={500} height={280} alt="" />
-            {/* data[0].imgUrl */}
+        <div className="carousel">
+            <BsArrowLeftCircleFill onClick={prevSlide} className="arrow arrow-left" />
+            {data.map((item, idx) => {
+                return (
+                    <img
+                        src={item.src}
+                        alt={item.alt}
+                        key={idx}
+                        className={slide === idx ? "slide" : "slide slide-hidden"}
+                    />
+                );
+            })}
+            <BsArrowRightCircleFill
+                onClick={nextSlide}
+                className="arrow arrow-right"
+            />
         </div>
-
     );
 }
 

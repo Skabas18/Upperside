@@ -126,3 +126,37 @@
 
   
 }
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.horizontal-slide {
+  animation: slide 8s linear infinite;  /*La animación dura 5 segundos y se repite infinitamente */
+  white-space: nowrap; 
+  position: absolute;
+  top: -5%;
+  left: 6%;
+  /* transform: translate(-50%, -50%); */
+  border-radius: 5px;
+  color: #947EC4;
+  text-align: start;
+  width: 80%;
+  right: 15%;
+}
+
+.image-container {
+  position: relative;
+  text-align: center;
+}
+
+.image-container img {
+  width: 95%;
+  margin-left: 40px;
+  margin-right: 40px;
+}
