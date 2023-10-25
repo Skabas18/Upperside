@@ -43,9 +43,15 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
-            <div className="image-container">
-                <img src={BarraFondo} alt="" />
-                <h1 className="horizontal-slide">Texto Desplazándose Horizontalmente</h1>
+            <div class="image-container">
+                <div className="DivSeg">
+                    <div class="div2">
+                            <div className="div3">
+                                <h1 class="horizontal-slide">{`COMPRA AHORA ENVIOS GRATIS 50 % OFF      `.repeat(3)}</h1>
+                            </div>
+                    </div>
+
+                </div>
             </div>
         </div>
 
