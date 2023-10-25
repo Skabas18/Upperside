@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import logo from "../assets/LogoUpperside.png";
-import UserProfile from '../assets/IconoPerfil.svg';
-import ShoppingBag from '../assets/IconoBolsa.svg';
-import IconSearch from '../assets/IconoLupa.svg';
-import FavoriteIcon from '../assets/IconoCorazón.svg';
-import MenuIcon from '../assets/Rayas-icono.svg';
+import UserProfile from '../assets/Iconos/IconoPerfil.svg';
+import ShoppingBag from '../assets/Iconos/IconoBolsa.svg';
+import IconSearch from '../assets/Iconos/IconoLupa.svg';
+import FavoriteIcon from '../assets/Iconos/IconoCorazón.svg';
+import MenuIcon from '../assets/Iconos/Rayas-icono.svg';
 import { ImCross } from "react-icons/im";
 import "../styles/Navbar.css"; // Estilos CSS para la barra de navegación
 
