@@ -6,9 +6,11 @@ import { data } from '../components/Data'
 
 
 function Inicio() {
+  console.log(data)
   return (
     <div>
       <div>
+
         <CustomSlider data={data} />
       </div>
       <div className="two-column-container">
