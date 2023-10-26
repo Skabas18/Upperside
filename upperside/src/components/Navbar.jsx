@@ -6,7 +6,6 @@ import ShoppingBag from '../assets/Iconos/IconoBolsa.svg';
 import IconSearch from '../assets/Iconos/IconoLupa.svg';
 import FavoriteIcon from '../assets/Iconos/IconoCorazón.svg';
 import MenuIcon from '../assets/Iconos/Rayas-icono.svg';
-import BarraFondo from '../assets/Modales/RayaNegraAnuncios.png'
 import { ImCross } from "react-icons/im";
 import "../styles/Navbar.css"; // Estilos CSS para la barra de navegación
 

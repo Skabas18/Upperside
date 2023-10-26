@@ -1,3 +1,32 @@
-h1{
-    color: black;
+.two-column-container {
+    display: flex; 
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+  }
+  
+
+
+.Columna{
+    flex: 1; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
 }
+  
+.Titulo1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Titulo1 h1,
+  .Titulo1 h2 {
+    margin: 0;
+  }
+  
+  .Subtitulo h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
