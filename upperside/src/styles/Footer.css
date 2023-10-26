@@ -47,7 +47,7 @@ a {
     display: flex;
     flex-direction: row;
     gap: 25px;
-    padding-top: 25px;
+    padding-top: 28px;
     align-items: center;
 
 
@@ -55,30 +55,82 @@ a {
 
 
 .socialmedia img{
-    width: 50px; 
+    width: 35px; 
     justify-content: space-between;
 }
 
 
 .footer-links-div h4 {
     font-size: 30px;
-    line-height: 17px;
+    line-height: 30px;
+    padding-top: 8px;
+    /* align-items: flex-start; */
+    font-family: "MonumentRegular";
 
-    padding-top: 25px;
-    align-items: flex-start;
+
 }
 
 .footer-links-div p {
-    margin-top: 50px;
+    margin-top: 25px;
     font-size: 15px;
-    line-height: 15px;
+    line-height: 20px;
     margin: 0.5rem 0;
     cursor: pointer;
+    font-family: "MonumentRegular";
 }
 
 hr {
     color: white !important;
     width: 100%;
+    align-items: flex-start;
+
 }
 
-@media screen and (max-width:400px) {}
+.registro-formulario {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+  }
+  
+  .input-con-boton {
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    padding: 5px;
+    width: 70%;
+    background-color: white;
+  }
+  
+  .input-correo {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 50px;
+    font-family: "MonumentRegular";
+    font-size: 20px;
+
+  }
+  
+  .boton-registro {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    border: none;
+    color: black;
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .boton-registro:hover {
+    background-color: #0056b3;
+  }
+
+  @font-face {
+    font-family: 'MonumentRegular';
+    src: url('../assets/Fonts/MonumentExtended-Regular.otf') format('otf');
+    /* Otras propiedades como font-weight y font-style si es necesario */
+  }
