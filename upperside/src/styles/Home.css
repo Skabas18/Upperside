@@ -24,9 +24,123 @@
     margin: 0;
   }
   
+  .Titulo1 h1{
+    font-family: 'Bebas Nue Regular';
+    font-weight: bold;
+    font-size: 100px;
+  }
+
+  .Titulo1 h2{
+    font-weight: bold;
+    font-size: 100px;
+    color: #947EC4;
+    font-family: 'Black Theory Regular';
+
+  }
+
   .Subtitulo h3 {
     display: flex;
     align-items: center;
-    justify-content: center;
     margin: 0;
+    font-family: 'Bebas Nue Regular';
+    font-weight: bold;
+    font-size: 100px;
+
+
   }
+
+
+  @font-face {
+    font-family: 'Bebas Nue Regular';
+    src: url('../assets/Fonts/BebasNeue-Regular.otf') format('otf');
+    /* Agrega otras propiedades como font-weight y font-style si es necesario */
+  }
+
+
+  @font-face {
+    font-family: 'Black Theory Regular';
+    src: url('../assets/Fonts/BlackTheory.otf') format('otf');
+    /* Otras propiedades como font-weight y font-style si es necesario */
+  }
+
+  /* Carrusel*/
+  ul,
+li {
+  list-style: none;
+  white-space: nowrap;
+}
+
+li {
+  display: inline;
+}
+
+img {
+  margin-top: -16px;
+}
+
+/* Main container */
+
+.main-container {
+  width: 500px;
+  height: 280px;
+  margin: 0 auto;
+}
+
+/* Slider container */
+.slider-container {
+  position: relative;
+  height: 100%
+}
+
+/* dots carrusel */
+.dots-container {
+  display: flex;
+  justify-content: center;
+}
+
+.dot-container-item {
+  margin: 8px 3px;
+  cursor: pointer;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Arrows */
+.leftArrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 32px;
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.rightArrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 32px;
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.container-images {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: 1px solid #eee;
+  overflow: hidden;
+}
+
+div.active {
+  background: #ccc;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}

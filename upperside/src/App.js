@@ -5,6 +5,7 @@ import Colecciones from './pages/Colecciones';
 import Lenceria from './pages/Lenceria';
 import Inferiores from './pages/Inferiores';
 import Complementos from './pages/Complementos';
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/Inferiores" element={<Inferiores/>} />
         <Route path="/Complementos" element={<Complementos/>} />
       </Routes>
+      <Footer/>
     </Router>
   );
 }

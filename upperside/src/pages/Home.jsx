@@ -14,6 +14,7 @@ function Inicio() {
       <div className="two-column-container">
         <div className="Columna">
           <AutoSlider />
+
         </div>
         <div className="Columna">
           <div className='Titulo1'>
