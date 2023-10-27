@@ -129,8 +129,3 @@ hr {
     background-color: #0056b3;
   }
 
-  @font-face {
-    font-family: 'MonumentRegular';
-    src: url('../assets/Fonts/MonumentExtended-Regular.otf') format('otf');
-    /* Otras propiedades como font-weight y font-style si es necesario */
-  }

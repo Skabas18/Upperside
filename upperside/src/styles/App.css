@@ -1,0 +1,28 @@
+/*Tipografias*/
+@font-face {
+    font-family: 'Bebas Nue Regular';
+    src: url('../assets/Fonts/BebasNeue-Regular.otf') format('otf');
+    /* Agrega otras propiedades como font-weight y font-style si es necesario */
+}
+
+
+@font-face {
+    font-family: 'Black Theory Regular';
+    src: url('../assets/Fonts/BlackTheory.otf') format('otf');
+    /* Otras propiedades como font-weight y font-style si es necesario */
+}
+
+
+
+
+@font-face {
+    font-family: 'MonumentBold';
+    src: url('../assets/Fonts/MonumentExtended-Ultrabold.otf') format('otf');
+    /* Agrega otras propiedades como font-weight y font-style si es necesario */
+}
+
+@font-face {
+    font-family: 'MonumentRegular';
+    src: url('../assets/Fonts/MonumentExtended-Regular.otf') format('otf');
+    /* Otras propiedades como font-weight y font-style si es necesario */
+}

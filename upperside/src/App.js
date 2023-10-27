@@ -1,11 +1,12 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from './components/Navbar';
-import Inicio from './pages/Home';
-import Colecciones from './pages/Colecciones';
-import Lenceria from './pages/Lenceria';
-import Inferiores from './pages/Inferiores';
-import Complementos from './pages/Complementos';
-import Footer from "./components/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import Navbar from './components/Navbar'
+import Inicio from './pages/Home'
+import Colecciones from './pages/Colecciones'
+import Lenceria from './pages/Lenceria'
+import Inferiores from './pages/Inferiores'
+import Complementos from './pages/Complementos'
+import Footer from "./components/Footer"
+import "./styles/App.css"
 
 function App() {
   return (

@@ -26,6 +26,9 @@ function CustomSlider({ data }) {
                     />
                 ))}
             </div>
+            <button className="custom-button" onClick={console.log("Hola")}>
+                Ver Mas
+            </button>
             <div className="arrows">
                 <BsArrowUpCircleFill onClick={prevSlide} className="arrow arrow-up" />
                 <BsArrowDownCircleFill onClick={nextSlide} className="arrow arrow-down" />
