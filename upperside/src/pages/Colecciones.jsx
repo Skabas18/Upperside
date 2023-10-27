@@ -6,15 +6,24 @@ import TituloB from "../assets/Modales/TituloColeccion.png"
 import AutoSlider from '../components/AutoSlider'
 import ImagenPromo from "../assets/Modales/TitulOtrasColecciones.png"
 import BannerHorizontal from '../components/BannerHorizontal'
+import Breadcrumbs from "../components/BreadCrumbs"
 import { data } from '../components/Data'
 
 import "../styles/Colecciones.css"
 function Colecciones() {
+
+  // const path = ['Inicio', 'Categoría', 'Producto'];
+  const path = window.location.pathname.split('/').filter(Boolean);
+  console.log("ESTE ES EL PATH --->"+path);
   return (
     <div>
       <div className='Banner-header'>
         <img src={Banner} alt="" />
         <img src={Anuncio} alt="" />
+      </div>
+
+      <div >
+        <Breadcrumbs path={path} />
       </div>
       <div className='Banner-Horizontal'>
         <h1>SUPÉRIORES</h1>

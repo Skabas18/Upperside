@@ -26,3 +26,10 @@
     src: url('../assets/Fonts/MonumentExtended-Regular.otf') format('otf');
     /* Otras propiedades como font-weight y font-style si es necesario */
 }
+
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/Fonts/Montserrat-VariableFont_wght.ttf') format('ttf');
+    /* Otras propiedades como font-weight y font-style si es necesario */
+}
