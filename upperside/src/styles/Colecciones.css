@@ -1,0 +1,60 @@
+.Banner-header {
+    display: flex;
+    flex-direction: column;
+    /* Coloca las imágenes en filas separadas */
+    margin: 0 40px;
+    /* Margen izquierdo y derecho de 40px */
+}
+
+.Banner-header img {
+    width: 100%;
+    /* Ocupa el 100% del contenedor */
+    height: auto;
+    /* Mantiene la proporción de aspecto de la imagen */
+    margin-bottom: 20px;
+    /* Espaciado entre las imágenes */
+}
+
+.Promocion {
+    display: flex;
+    align-items: center;
+    /* Agrega cualquier otro estilo necesario */
+}
+
+.Imagen-promocion img,
+.Imagen-titulo img {
+    max-width: 100%;
+    /* Asegura que las imágenes no sobresalgan de sus columnas */
+}
+
+.Imagen-titulo {
+    margin-left: 20px;
+    /* Ajusta el margen entre las imágenes y el texto según tus necesidades */
+}
+
+.Banner-Colecciones {
+    display: flex;
+    padding-top: 30px;
+    background-image: url("../assets/Modales/FondOtrasColecciones.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.Columna1, .Columna2 {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .Columna1 img{
+    width: 70%;
+    margin-left: 15%;
+  }
+  .Columna1{
+    margin: auto;
+  }
+
+  .Banner-Horizontal h1{
+    margin-left: 80px;
+  }

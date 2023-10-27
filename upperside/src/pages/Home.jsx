@@ -9,7 +9,6 @@ import Estrella from "../assets/Iconos/estrella.png"
 
 
 function Inicio() {
-  console.log(data)
   return (
     <div>
       <div>
