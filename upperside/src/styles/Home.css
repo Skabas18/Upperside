@@ -1,59 +1,104 @@
 .two-column-container {
-    display: flex; 
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 30px;
-  }
-  
-
-
-.Columna{
-    flex: 1; 
-    padding: 20px; 
-    border: 1px solid #ccc; 
+  display: flex;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 30px;
 }
-  
+
+
+
+.Columna {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
 .Titulo1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .Titulo1 h1,
-  .Titulo1 h2 {
-    margin: 0;
-  }
-  
-  .Titulo1 h1{
-    font-family: 'Bebas Nue Regular';
-    font-weight: bold;
-    font-size: 100px;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .Titulo1 h2{
-    font-weight: bold;
-    font-size: 100px;
-    color: #947EC4;
-    font-family: 'BlackTheory';
+.Titulo1 h1,
+.Titulo1 h2 {
+  margin: 0;
+}
 
-  }
+.Titulo1 h1 {
+  font-family: 'Bebas Nue Regular';
+  font-weight: bold;
+  font-size: 100px;
+}
 
-  .Subtitulo h3 {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    font-family: 'Bebas Nue Regular';
-    font-weight: bold;
-    font-size: 100px;
+.Titulo1 h2 {
+  font-weight: bold;
+  font-size: 100px;
+  color: #947EC4;
+  font-family: 'BlackTheory';
 
+}
 
-  }
+.Subtitulo h3 {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-family: 'Bebas Nue Regular';
+  font-weight: bold;
+  font-size: 100px;
 
 
+}
 
 
-  /* Carrusel*/
-  ul,
+.Subtitulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  padding-bottom: 50px;
+  /* Centra el contenido horizontalmente */
+  margin: 0;
+}
+
+.Subtitulo h3 {
+  margin: 0;
+  font-family: 'Bebas Nue Regular';
+  font-weight: bold;
+  font-size: 100px;
+}
+
+.Subtitulo h2 {
+  font-weight: bold;
+  font-size: 100px;
+  color: #947EC4;
+  font-family: 'BlackTheory';
+}
+
+.Estrella-izquierda,
+.Estrella-derecha {
+  display: flex;
+  align-items: center;
+  /* Centra la imagen verticalmente */
+}
+
+.Estrella-izquierda{
+  margin-right: 190px;
+}
+.Estrella-derecha{
+  margin-left: 200px;
+}
+
+.Estrella-izquierda img,
+.Estrella-derecha img {
+  width: 15%;
+  /* Tamaño de la imagen */
+  height: 15%;
+}
+
+
+
+/* Carrusel*/
+ul,
 li {
   list-style: none;
   white-space: nowrap;
@@ -63,9 +108,7 @@ li {
   display: inline;
 }
 
-img {
-  margin-top: -16px;
-}
+
 
 /* Main container */
 
@@ -132,4 +175,8 @@ div.active {
   width: 15px;
   height: 15px;
   border-radius: 50%;
+}
+
+.Banner-Horizontal {
+  padding-top: 50px;
 }

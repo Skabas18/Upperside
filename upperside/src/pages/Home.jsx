@@ -4,6 +4,8 @@ import AutoSlider from '../components/AutoSlider'
 import '../styles/Home.css'
 import { data } from '../components/Data'
 import SubMenu from '../components/SubMenu'
+import BannerHorizontal from '../components/BannerHorizontal'
+import Estrella from "../assets/Iconos/estrella.png"
 
 
 function Inicio() {
@@ -11,7 +13,6 @@ function Inicio() {
   return (
     <div>
       <div>
-
         <CustomSlider data={data} />
       </div>
       <div className="two-column-container">
@@ -27,7 +28,28 @@ function Inicio() {
           <div className='Subtitulo'>
             <h3>YOUR STYLE</h3>
           </div>
-            <SubMenu />
+          <SubMenu />
+          <AutoSlider />
+        </div>
+      </div>
+      <div className='Banner-Horizontal'>
+        <BannerHorizontal data={data} />
+      </div>
+      <div>
+        <div className="Columna">
+          <div className='Titulo1'>
+            <h1>UNCONVENTIONAL</h1>
+          </div>
+          <div className='Subtitulo'>.
+            <div className='Estrella-izquierda'>
+              <img src={Estrella} alt="" />
+            </div>
+            <h2>UNADOLOGETIC</h2>
+
+            <div className='Estrella-derecha'>
+              <img src={Estrella} alt="" />
+            </div>
+          </div>
           <AutoSlider />
         </div>
       </div>
