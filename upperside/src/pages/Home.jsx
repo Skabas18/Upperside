@@ -3,6 +3,7 @@ import CustomSlider from '../components/CustomSlider'
 import AutoSlider from '../components/AutoSlider'
 import '../styles/Home.css'
 import { data } from '../components/Data'
+import SubMenu from '../components/SubMenu'
 
 
 function Inicio() {
@@ -26,6 +27,7 @@ function Inicio() {
           <div className='Subtitulo'>
             <h3>YOUR STYLE</h3>
           </div>
+            <SubMenu />
           <AutoSlider />
         </div>
       </div>

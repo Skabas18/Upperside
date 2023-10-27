@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    width: 100%; /* O establece un ancho específico según tus necesidades */
+  }
+  
+  .column {
+    flex: 1;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+  }
+  
+  .column h2 {
+    margin: 0;
+    text-decoration: underline;
+    margin-bottom: 3px; /* Margen de 3 píxeles debajo del texto subrayado */
+  }
